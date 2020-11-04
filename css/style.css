@@ -1,0 +1,42 @@
+*, :after, :before{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	/*font-family: 'Bebas Neue', cursive;*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight:normal;
+	font-size:16px;
+	line-height:28px;
+}
+img{
+	padding:0;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	display:inline-block;
+	color:inherit;
+}
+ul{
+	list-style-type:none;
+}
+ul, li{
+	margin:0;
+	padding:0;
+}
+
+.btn{
+	font-weight:600;
+	font-size:16px;
+	line-height:28px;
+	text-align:center;
+	padding:13px 0;
+	width:220px;
+	height:56px;
+	color:white;
+	background: linear-gradient(173.48deg, #2BE9A3 7.91%, #07CDBF 56.39%, #00C7C5 66.53%, #09C7CA 74.43%, #21C9D8 89.08%, #48CBEE 107.12%, #66CCFF 119.52%);
+	box-shadow: 0px 22px 36px rgba(1, 200, 197, 0.3);
+	border-radius: 12px;
+}
