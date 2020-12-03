@@ -5,8 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>MMBA</title>
 		<meta name="description" content="">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<!--slick slider styles-->
+		<link rel="stylesheet" type="text/css" href="css/plugins/slick.css"/>
+		<!--font links-->
+		<!--link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"-->
+		<!--offline-font links-->
+		<link rel="stylesheet" type="text/css" href="css/offline-fonts.css">
+		<!--proper styles-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -17,40 +23,57 @@
 			<header class="header">
 				<div class="header__inner">
 					<a class="header__logo">
-						<img src="img/logo_l.svg" alt="logotype">
+						<img src="img/logo_lrg.svg" alt="logotype">
 					</a>
+					<a class="header__logo_m">
+						<img src="img/logo_mdl.svg" alt="logotype">
+					</a>
+					<div class="header__gap"></div>
 					<nav class="header__navigation">
 						<ul class="header__menu">
 							<li class="header__menu-item">
-								<a class="header__menu-link" href="">О семинаре</a>
+								<a class="header__menu-link" href="#aboutWorkshop">О семинаре</a>
 							</li>
 							<li class="header__menu-item">
-								<a class="header__menu-link" href="">Программа</a>
+								<a class="header__menu-link" href="#workshopProgramm">Программа</a>
 							</li>
 							<li class="header__menu-item">
-								<a class="header__menu-link" href="">Авторы</a>
+								<a class="header__menu-link" href="#workshopAuthors">Авторы</a>
 							</li>
 							<li class="header__menu-item">
-								<a class="header__menu-link" href="">Отзывы</a>
+								<a class="header__menu-link" href="#workshopReviews">Отзывы</a>
 							</li>
 							<li class="header__menu-item">
-								<a class="header__menu-link" href="">Контакты</a>
+								<a class="header__menu-link" href="#contactUs">Контакты</a>
 							</li>
-							<li class="header__menu-item header__menu-item-highlighted">
-								<a class="header__menu-link" href="">Видео-приглашение</a>
+							<li class="header__menu-item header__menu-item_mbl">
+								<a class="btn btn_mbl" href="#">Принять участие</a>
+							</li>
+							<li class="header__menu-item header__menu-item_mbl header__gap">
+								<div></div>
+							</li>
+							<li class="header__menu-item header__menu-item_mbl">
+								<img class="header__logo-menu" src="img/logo_sml.svg">
 							</li>
 						</ul>
 					</nav>
+					<a class="header__video-invite video-invite" href="">Видео-приглашение</a>
+					<div class="header__mobile-menu">
+						<div class="header__menu-burger">
+							<span></span>
+						</div>
+					</div>
 				</div>
 			</header>
 			<main class="main">
-				<div class="main__inner">
+				<div class="main__inner"><a class="anchor-link" name="aboutWorkshop"></a>
 					<section class="main__title-screen">
-						<h2 class="main__ts-h2 h2"> Семинар по продвижению</br> мобильных приложений в 2021 году</h2>
+						<h2 class="main__ts-header h2"> Семинар по продвижению</br> мобильных приложений в 2021 году</h2>
 						<p class="main__ts-p-l p-l">Научитесь управлять процессом продвижения:</br> от сбора команды до международной экспансии</p>
 						<div class="main__ts-take-part">
 							<a class="main__ts-btn-take-part btn" href="#">Принять участие</a>
-							<a class="main__ts-learn-prog" href="#">Программа обучения ></a>
+							<a class="main__ts-learn-prog text-link" href="#">Программа обучения ></a>
+							<span class="main__ts-video-invite-wrapper"><a class="main__ts-video-invite video-invite" href="">Видео-приглашение</a></span>
 						</div>
 						<div class="main__ts-location">
 							<div class="main__ts-loc-item">
@@ -63,17 +86,647 @@
 							</div>
 						</div>
 					</section>
+					<section class="main__statistics">
+						<div class="light-box-s light-box-s_f">
+							<div class="light-box-s__header">
+								<span>4</span> часа
+							</div>
+							<div class="light-box-s__content">
+								Практической, пошаговой информации
+							</div>
+						</div>
+						<div class="light-box-s light-box-s_f">
+							<div class="light-box-s__header">
+								<span>10</span> этапов
+							</div>
+							<div class="light-box-s__content">
+								Практической, пошаговой информации
+							</div>
+						</div>
+						<div class="light-box-s light-box-s_f">
+							<div class="light-box-s__header">
+								<span>7</span> экспертов
+							</div>
+							<div class="light-box-s__content">
+								Разрабатывали программу обучения
+							</div>
+						</div>
+						<div class="light-box-s light-box-s_f">
+							<div class="light-box-s__header">
+								<span>Ноябрь</span> 2020
+							</div>
+							<div class="light-box-s__content">
+								Самые актуальные знания
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="main__inner main__inner_m">
+					<section class="main__you-ll-get">
+						<h3 class="main__ylg-header h3">Вы получите</h3>
+						<div class="main__ylg-light-box light-box-l">
+							<img src="img/light-box-l-illu-1.svg">
+							<div class="light-box-l__number">01</div>
+							<div class="light-box-l__content">Алгоритм для успешного продвижения приложения в 2021</div>
+						</div>
+						<div class="main__ylg-light-box light-box-l">
+							<img src="img/light-box-l-illu-2.svg">
+							<div class="light-box-l__number">02</div>
+							<div class="light-box-l__content">Практические знания по каждому этапу продвижения</div>
+						</div>
+						<div class="main__ylg-light-box light-box-l">
+							<img src="img/light-box-l-illu-3.svg">
+							<div class="light-box-l__number">03</div>
+							<div class="light-box-l__content">Актуальные цены и сроки маркетинговых услуг для каждого этапа</div>
+						</div>
+						<div class="main__ylg-light-box light-box-l">
+							<img src="img/light-box-l-illu-4.svg">
+							<div class="light-box-l__number">04</div>
+							<div class="light-box-l__content">Список надежных подрядчиков на каждый этап</div>
+						</div>
+						<div class="main__ylg-light-box light-box-l">
+							<img src="img/light-box-l-illu-5.svg">
+							<div class="light-box-l__number">05</div>
+							<div class="light-box-l__content">Знания по сбору и управлению маркетинговой командой</div>
+						</div>
+						<a class="main__ylg-btn-take-part btn" href="#">Принять участие</a>
+					</section>
+				</div>
+				<div class="main__inner">
+					<section class="main__you-ll-learn">
+						<h3 class="main__yll-header h3">Вы научитесь</h3>
+						<div class="main__yll-card-file card-file">
+							<div class="info-card">
+								<div class="info-card__number">1</div>
+								<h4 class="info-card__header h4">Формировать продукт который нужен рынку</h4>
+								<p class="info-card__content">Управлять продуктовой аналитикой, проводить конкурентный анализ и пользовательские опросы.</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">2</div>
+								<h4 class="info-card__header h4">Повышать прибыль и удобство использования</h4>
+								<p class="info-card__content">Настраивать монетизацию, UI/UX и Push-уведомления.</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">3</div>
+								<h4 class="info-card__header h4">Визуально оформлять проект</h4>
+								<p class="info-card__content">Управлять разработкой фирменнго стиля, названия, иконки и сайта.</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">4</div>
+								<h4 class="info-card__header h4">Создавать стратегию продвижения</h4>
+								<p class="info-card__content">Определять иснтрументы продвижения, планировать бюджет.</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">5</div>
+								<h4 class="info-card__header h4">Настраивать аналитику</h4>
+								<p class="info-card__content">Следить за ключевыми метриками и конкурентами. Управлять рекламной и внутренней аналитикой.</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">6</div>
+								<h4 class="info-card__header h4">Проводить ASO в App Store и Google Play</h4>
+								<p class="info-card__content">Оформлять страницу в приложения и продвигаться по поисковым запросам</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">7</div>
+								<h4 class="info-card__header h4">Продвигаться через медиа-инструменты</h4>
+								<p class="info-card__content">Разберетесь как работать со СМИ и блогерами.</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">8</div>
+								<h4 class="info-card__header h4">Продвигаться через рекламные сети</h4>
+								<p class="info-card__content">Управлять продвижением в Facebook Ads, My.Target, Google UAC, ASA, TikTok.</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">9</div>
+								<h4 class="info-card__header h4">Выводить проект на новые рынки</h4>
+								<p class="info-card__content">Проводить локализацию, готовить и реализовывать план по экспансии</p>
+							</div>
+							<div class="info-card">
+								<div class="info-card__number">10</div>
+								<h4 class="info-card__header h4">Работать с базой пользователей</h4>
+								<p class="info-card__content">Управлять продвижением в Facebook Ads, My.Target, Google UAC, ASA, TikTok.</p>
+							</div>
+						</div>
+					</section>
+					<section class="main__you-ll-have">
+						<div class="light-box-b">
+							<div class="light-box-b__shadow"></div>
+							<div class="light-box-b__content">
+								<div class="light-box-b__header h3">Главное, вы получите:</div>
+								<ul class="light-box-b__list">
+									<li class="light-box-b__list-item">Список проверенных подрядчиков на каждый этап продвижения</li>
+									<li class="light-box-b__list-item">Инструкции по сбору и управлению маркетинговой командой</li>
+								</ul>
+								<a class="light-box-b__btn-take-part btn" href="#">Принять участие</a>
+							</div>
+							<a name="workshopProgramm"></a>
+						</div>
+					</section>
+				</div>
+				<div class="main__inner main__inner_m">
+					<section class="main__programm accord">
+						<h3 class="accord-header h3">Программа семинара</h3>
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-1" id="ac-1" checked>
+							<label class="accord-item-label h5" for="ac-1"><span>1</span><div> Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+								<div class="accord-subitem h6">Урок №1. Исследование рынка</div>
+								<div class="accord-subitem h6">Урок №2. Product маркетинг FIT</div>
+								<div class="accord-subitem h6">Урок №3. Инструкция по работе с подрядчиками</div>
+								<div class="accord-summary h6">Вы научитесь</div>
+								<div class="accord-thesis">Первый тезис</div>
+								<div class="accord-thesis">Второй тезис</div>
+								<div class="accord-thesis">Третий тезис</div>
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-2" id="ac-2">
+							<label class="accord-item-label h5" for="ac-2"><span>2</span><div>Внутренние механики. UI, UX, монетизация</div></label>
+							<article class="accord-item-content">
+								<div class="accord-subitem h6">Урок №4.</div>
+								<div class="accord-subitem h6">Урок №5.</div>
+								<div class="accord-subitem h6">Урок №6.</div>
+								<div class="accord-summary h6">Вы научитесь</div>
+								<div class="accord-thesis">Первый тезис</div>
+								<div class="accord-thesis">Второй тезис</div>
+								<div class="accord-thesis">Третий тезис</div>
+							</article>
+						</div>
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-3" id="ac-3">
+							<label class="accord-item-label h5" for="ac-3"><span>3</span><div>Визуальное оформление проекта</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-4" id="ac-4">
+							<label class="accord-item-label h5" for="ac-4"><span>4</span><div>Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-5" id="ac-5">
+							<label class="accord-item-label h5" for="ac-5"><span>5</span><div>Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-6" id="ac-6">
+							<label class="accord-item-label h5" for="ac-6"><span>6</span><div>Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-7" id="ac-7">
+							<label class="accord-item-label h5" for="ac-7"><span>7</span><div>Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-8" id="ac-8">
+							<label class="accord-item-label h5" for="ac-8"><span>8</span><div>Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-9" id="ac-9">
+							<label class="accord-item-label h5" for="ac-9"><span>9</span><div>Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<div class="accord-item">
+							<input class="accord-item-input" type="checkbox" name="p-accord-10" id="ac-10">
+							<label class="accord-item-label h5" for="ac-10"><span>10</span><div>Продуктовая аналитика</div></label>
+							<article class="accord-item-content">
+							</article>
+						</div>						
+						<a class="accord-btn-take-part btn" href="#">Принять участие</a>
+						<a name="workshopAuthors"></a>
+					</section>
+				</div>
+				<section class="main__authors">
+					<h3 class="main__aut-header h3">Авторы семинара</h3>
+					<div class="main__aut-files-slider aut-fls-slider">
+						<div class="aut-fls-slider__inner">
+							<article class="aut-fls-slider__file">
+								<img src="img/author-photo-02_340-375.PNG">
+								<div class="aut-fls-slider__info">
+									<h4 class="aut-fls-slider__name h4">Name Surname</h4>
+									<p class="aut-fls-slider__position">Со-автор и ведущий семинара</p>
+									<ul class="aut-fls-slider__achievement-list">
+										<li class="aut-fls-slider__achievement">CEO мобильного агентства <a class="text-link" href="AppBrain.ru"> AppBrain.ru</a></li>
+										<li class="aut-fls-slider__achievement"><span class="semi-bold">7 лет</span> в разработке и продвижении приложений;</li>
+										<li class="aut-fls-slider__achievement">Более 40 кейсов по всему миру;</li>
+										<li class="aut-fls-slider__achievement">Со-автор книги по продвижению приложений</li>
+										<li class="aut-fls-slider__achievement">Преподаватель ВШЭ, Skillbox, Praktika.School;</li>
+										<li class="aut-fls-slider__achievement">Достигал цены установки $0.04 в США при 10К установок в сутки</li>
+										<li class="aut-fls-slider__achievement">Работал c Easy Ten, Creative Mobile, Windy.app</li>
+									</ul>
+								</div>
+							</article>
+							<article class="aut-fls-slider__file">
+								<img src="img/author-photo-02_340-375.PNG">
+								<div class="aut-fls-slider__info">
+									<h4 class="aut-fls-slider__name h4">Name Surname</h4>
+									<p class="aut-fls-slider__position">Со-автор и ведущий семинара</p>
+									<ul class="aut-fls-slider__achievement-list">
+										<li class="aut-fls-slider__achievement">CEO мобильного агентства <a class="text-link" href="AppBrain.ru"> AppBrain.ru</a></li>
+										<li class="aut-fls-slider__achievement"><span class="semi-bold">8 лет</span> в разработке и продвижении приложений;</li>
+										<li class="aut-fls-slider__achievement">Более 40 кейсов по всему миру;</li>
+										<li class="aut-fls-slider__achievement">Со-автор книги по продвижению приложений</li>
+										<li class="aut-fls-slider__achievement">Преподаватель ВШЭ, Skillbox, Praktika.School;</li>
+										<li class="aut-fls-slider__achievement">Достигал цены установки $0.04 в США при 10К установок в сутки</li>
+										<li class="aut-fls-slider__achievement">Работал c Easy Ten, Creative Mobile, Windy.app</li>
+										<li class="aut-fls-slider__achievement">Серебрянный призер 2019 по продажам сепулек на привозе</li>
+									</ul>
+								</div>
+							</article>
+							<article class="aut-fls-slider__file">
+								<img src="img/author-photo-02_340-375.PNG">
+								<div class="aut-fls-slider__info">
+									<h4 class="aut-fls-slider__name h4">Name Surname</h4>
+									<p class="aut-fls-slider__position">Со-автор и ведущий семинара</p>
+									<ul class="aut-fls-slider__achievement-list">
+										<li class="aut-fls-slider__achievement">CEO мобильного агентства <a class="text-link" href="AppBrain.ru"> AppBrain.ru</a></li>
+										<li class="aut-fls-slider__achievement"><span class="semi-bold">17 лет</span> в разработке и продвижении приложений;</li>
+										<li class="aut-fls-slider__achievement">Более 40 кейсов по всему миру;</li>
+										<li class="aut-fls-slider__achievement">Со-автор книги по продвижению приложений</li>
+										<li class="aut-fls-slider__achievement">Преподаватель ВШЭ, Skillbox, Praktika.School;</li>
+										<li class="aut-fls-slider__achievement">Достигал цены установки $0.04 в США при 10К установок в сутки</li>
+									</ul>
+								</div>
+							</article>
+							<article class="aut-fls-slider__file">
+								<img src="img/author-photo-02_340-375.PNG">
+								<div class="aut-fls-slider__info">
+									<h4 class="aut-fls-slider__name h4">Name Surname</h4>
+									<p class="aut-fls-slider__position">Со-автор и ведущий семинара</p>
+									<ul class="aut-fls-slider__achievement-list">
+										<li class="aut-fls-slider__achievement">CEO мобильного агентства <a class="text-link" href="AppBrain.ru"> AppBrain.ru</a></li>
+										<li class="aut-fls-slider__achievement"><span class="semi-bold">77 лет</span> в разработке и продвижении приложений;</li>
+										<li class="aut-fls-slider__achievement">Более 40 кейсов по всему миру;</li>
+										<li class="aut-fls-slider__achievement">Со-автор книги по продвижению приложений</li>
+										<li class="aut-fls-slider__achievement">Преподаватель ВШЭ, Skillbox, Praktika.School;</li>
+										<li class="aut-fls-slider__achievement">Достигал цены установки $0.04 в США при 10К установок в сутки</li>
+										<li class="aut-fls-slider__achievement">Работал c Easy Ten, Creative Mobile, Windy.app</li>
+									</ul>
+								</div>
+							</article>
+							<article class="aut-fls-slider__file">
+								<img src="img/author-photo-02_340-375.PNG">
+								<div class="aut-fls-slider__info">
+									<h4 class="aut-fls-slider__name h4">Name Surname</h4>
+									<p class="aut-fls-slider__position">Со-автор и ведущий семинара</p>
+									<ul class="aut-fls-slider__achievement-list">
+										<li class="aut-fls-slider__achievement">CEO мобильного агентства <a class="text-link" href="AppBrain.ru"> AppBrain.ru</a></li>
+										<li class="aut-fls-slider__achievement"><span class="semi-bold">777 лет</span> в разработке и продвижении приложений;</li>
+										<li class="aut-fls-slider__achievement">Более 40 кейсов по всему миру;</li>
+										<li class="aut-fls-slider__achievement">Со-автор книги по продвижению приложений</li>
+										<li class="aut-fls-slider__achievement">Преподаватель ВШЭ, Skillbox, Praktika.School;</li>
+										<li class="aut-fls-slider__achievement">Достигал цены установки $0.04 в США при 10К установок в сутки</li>
+										<li class="aut-fls-slider__achievement">Работал c Easy Ten, Creative Mobile, Windy.app</li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="main__aut-thumbnails-slider aut-tmb-slider">
+						<div class="aut-tmb-slider__inner">
+							<div class="aut-tmb-slider__thumbnail-outer">
+								<div class="aut-tmb-slider__thumbnail" id="author-tn-1">
+									<img src="img/author-photo-02_340-375.PNG">
+									<div class="aut-tmb-slider__info">
+										<h6 class="aut-tmb-slider__name h6">Name Surname</h6>
+										<p class="aut-tmb-slider__position">Position</p>
+									</div>
+								</div>
+							</div>
+							<div class="aut-tmb-slider__thumbnail-outer">
+								<div class="aut-tmb-slider__thumbnail" id="author-tn-2">
+									<img src="img/author-photo-02_340-375.PNG">
+									<div class="aut-tmb-slider__info">
+										<h6 class="aut-tmb-slider__name h6">Name Surname</h6>
+										<p class="aut-tmb-slider__position">Position</p>
+									</div>
+								</div>
+							</div>
+							<div class="aut-tmb-slider__thumbnail-outer">
+								<div class="aut-tmb-slider__thumbnail" id="author-tn-3">
+									<img src="img/author-photo-02_340-375.PNG">
+									<div class="aut-tmb-slider__info">
+										<h6 class="aut-tmb-slider__name h6">Name Surname</h6>
+										<p class="aut-tmb-slider__position">Position</p>
+									</div>
+								</div>
+							</div>
+							<div class="aut-tmb-slider__thumbnail-outer">
+								<div class="aut-tmb-slider__thumbnail" id="author-tn-4">
+									<img src="img/author-photo-02_340-375.PNG">
+									<div class="aut-tmb-slider__info">
+										<h6 class="aut-tmb-slider__name h6">Name Surname</h6>
+										<p class="aut-tmb-slider__position">Position</p>
+									</div>
+								</div>
+							</div>
+							<div class="aut-tmb-slider__thumbnail-outer">
+								<div class="aut-tmb-slider__thumbnail" id="author-tn-5">
+									<img src="img/author-photo-02_340-375.PNG">
+									<div class="aut-tmb-slider__info">
+										<h6 class="aut-tmb-slider__name h6">Name Surname</h6>
+										<p class="aut-tmb-slider__position">Position</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aut-tmb-slider-navigation">
+						<div class="aut-tmb-slider-navi-dots s-slider-navi-dots"></div>
+						<div class="aut-tmb-slider-navi-arrows s-slider-navi-arrows"></div>
+					</div>
+				</section>
+				<section class="main__cases">
+					<h3 class="main__css-header h3">Кейсы авторов семинара</h3>
+					<div class="main__css-slider css-slider">
+						<div class="css-slider__inner">
+							<div class="css-slider__item css-slider-item">
+								<img class="css-slider-item__picture" src="img/icon-10_d.svg">
+								<div class="css-slider-item__gap"></div>
+								<h3 class="css-slider-item__header h3v2">PicsArt</h3>
+								<div class="css-slider-item__content">
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem_long css-slider-subitem-task">
+										<h6 class="css-slider-subitem__header h6">Задача</h6>
+										<p class="css-slider-subitem__text semi-bold">вывод на рынок США</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-platform">
+										<h6 class="css-slider-subitem__header h6">Платформы</h6>
+										<p class="css-slider-subitem__text">iOS, Android</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-results">
+										<h6 class="css-slider-subitem__header h6">Результаты</h6>
+										<div class="css-slider-subitem-results__content">
+											<p class="css-slider-subitem__text">300.000 установок</p>
+											<p class="css-slider-subitem__text">$0.7 средний CPI</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="css-slider__item css-slider-item">
+								<img class="css-slider-item__picture" src="img/icon-10_d.svg">
+								<div class="css-slider-item__gap"></div>
+								<h3 class="css-slider-item__header h3v2">PicsArt2</h3>
+								<div class="css-slider-item__content">
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem_long css-slider-subitem-task">
+										<h6 class="css-slider-subitem__header h6">Задача</h6>
+										<p class="css-slider-subitem__text semi-bold">вывод на рынок США</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-platform">
+										<h6 class="css-slider-subitem__header h6">Платформы</h6>
+										<p class="css-slider-subitem__text">iOS, Android</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-results">
+										<h6 class="css-slider-subitem__header h6">Результаты</h6>
+										<div class="css-slider-subitem-results__content">
+											<p class="css-slider-subitem__text">300.000 установок</p>
+											<p class="css-slider-subitem__text">$0.7 средний CPI</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="css-slider__item css-slider-item">
+								<img class="css-slider-item__picture" src="img/icon-10_d.svg">
+								<div class="css-slider-item__gap"></div>
+								<h3 class="css-slider-item__header h3v2">PicsArt3</h3>
+								<div class="css-slider-item__content">
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem_long css-slider-subitem-task">
+										<h6 class="css-slider-subitem__header h6">Задача</h6>
+										<p class="css-slider-subitem__text semi-bold">вывод на рынок США</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-platform">
+										<h6 class="css-slider-subitem__header h6">Платформы</h6>
+										<p class="css-slider-subitem__text">iOS, Android</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-results">
+										<h6 class="css-slider-subitem__header h6">Результаты</h6>
+										<div class="css-slider-subitem-results__content">
+											<p class="css-slider-subitem__text">300.000 установок</p>
+											<p class="css-slider-subitem__text">$0.7 средний CPI</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="css-slider__item css-slider-item">
+								<img class="css-slider-item__picture" src="img/icon-10_d.svg">
+								<div class="css-slider-item__gap"></div>
+								<h3 class="css-slider-item__header h3v2">PicsArt4</h3>
+								<div class="css-slider-item__content">
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem_long css-slider-subitem-task">
+										<h6 class="css-slider-subitem__header h6">Задача</h6>
+										<p class="css-slider-subitem__text semi-bold">вывод на рынок США</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-platform">
+										<h6 class="css-slider-subitem__header h6">Платформы</h6>
+										<p class="css-slider-subitem__text">iOS, Android</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-results">
+										<h6 class="css-slider-subitem__header h6">Результаты</h6>
+										<div class="css-slider-subitem-results__content">
+											<p class="css-slider-subitem__text">300.000 установок</p>
+											<p class="css-slider-subitem__text">$0.7 средний CPI</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="css-slider__item css-slider-item">
+								<img class="css-slider-item__picture" src="img/icon-10_d.svg">
+								<div class="css-slider-item__gap"></div>
+								<h3 class="css-slider-item__header h3v2">PicsArt5</h3>
+								<div class="css-slider-item__content">
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem_long css-slider-subitem-task">
+										<h6 class="css-slider-subitem__header h6">Задача</h6>
+										<p class="css-slider-subitem__text semi-bold">вывод на рынок США</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-platform">
+										<h6 class="css-slider-subitem__header h6">Платформы</h6>
+										<p class="css-slider-subitem__text">iOS, Android</p>
+									</div>
+									<div class="css-slider-item__subitem css-slider-subitem css-slider-subitem-results">
+										<h6 class="css-slider-subitem__header h6">Результаты</h6>
+										<div class="css-slider-subitem-results__content">
+											<p class="css-slider-subitem__text">300.000 установок</p>
+											<p class="css-slider-subitem__text">$0.7 средний CPI</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="css-slider-navigation">
+						<div class="css-slider-navi-dots s-slider-navi-dots"></div>
+						<div class="css-slider-navi-arrows s-slider-navi-arrows"></div>
+						<div class="css-slider-navi-gap"></div>
+					</div>
+				</section>
+				<div class="main__inner">
+					<section class="main__forms-collaborate">
+						<div class="main__fc-content">
+							<div class="main__fc-light-box light-box-n">
+								<div class="light-box-n__shadow"></div>
+								<div class="light-box-n__content">
+									<img class="light-box-n__image" src="img/light-box-n-illu-1.svg">
+									<h4 class="light-box-n__header h4v2">Живое участие</h4>
+									<ul class="light-box-n__list">
+										<li class="light-box-n__list-item p-m">4 часа, 10 модулей</li>
+										<li class="light-box-n__list-item p-m">Контакты подрядчиков</li>
+										<li class="light-box-n__list-item p-m">Ответы на вопросы</li>
+										<li class="light-box-n__list-item p-m">Презентация спикера</li>
+										<li class="light-box-n__list-item p-m">Доступ в закрытый Телеграм чат</li>
+									</ul>
+									<div class="light-box-n__gap"></div>
+									<p class="light-box-n__date">до 10 ноября</p>
+									<p class="light-box-n__price">2990р <span class="light-box-n__bad-text">4990р</span></p>
+									<a class="light-box-n__btn-place-order btn" href="#">Подать заявку</a>
+								</div>
+							</div>
+							<div class="main__fc-light-box light-box-n">
+								<div class="light-box-n__shadow"></div>
+								<div class="light-box-n__content">
+									<img class="light-box-n__image" src="img/light-box-n-illu-2.svg">
+									<h4 class="light-box-n__header h4v2">Видео-запись</h4>
+									<ul class="light-box-n__list">
+										<li class="light-box-n__list-item p-m">4 часа, 10 модулей</li>
+										<li class="light-box-n__list-item p-m">Контакты подрядчиков</li>
+										<li class="light-box-n__list-item p-m">Ответы на вопросы</li>
+										<li class="light-box-n__list-item p-m">Презентация спикера</li>
+										<li class="light-box-n__list-item p-m">Доступ в закрытый Телеграм чат</li>
+									</ul>
+									<div class="light-box-n__gap"></div>
+									<p class="light-box-n__date">до 10 ноября</p>
+									<p class="light-box-n__price">2990р <span class="light-box-n__bad-text">4990р</span></p>
+									<a class="light-box-n__btn-place-order btn" href="#">Подать заявку</a>	
+								</div>
+							</div>
+							<div class="main__fc-light-box light-box-n">
+								<div class="light-box-n__shadow"></div>
+								<div class="light-box-n__content">
+									<img class="light-box-n__image" src="img/light-box-n-illu-3.svg">
+									<h4 class="light-box-n__header h4v2">Личная консультация</h4>
+									<ul class="light-box-n__list">
+										<li class="light-box-n__list-item p-m">4 часа, 10 модулей</li>
+										<li class="light-box-n__list-item p-m">Контакты подрядчиков</li>
+										<li class="light-box-n__list-item p-m">Ответы на вопросы</li>
+										<li class="light-box-n__list-item p-m">Презентация спикера</li>
+										<li class="light-box-n__list-item p-m">Доступ в закрытый Телеграм чат</li>
+									</ul>
+									<div class="light-box-n__gap"></div>
+									<p class="light-box-n__date">до 10 ноября</p>
+									<p class="light-box-n__price">7990р <span class="light-box-n__bad-text">12990р</span></p>
+									<a class="light-box-n__btn-place-order btn" href="#">Подать заявку</a>
+								</div>
+							</div>
+						</div>
+						<p class="main__fc-reason">Пройдя семинар вы сэкономите от <span class="blue-text">30.000 руб.<br class="main__fc-reason_br"> до 250.000 руб.</span> на маркетинговых услугах подрядчиков</p>
+						<a class="anchor-link" name="workshopReviews"></a>
+					</section>
+					<section class="main__reviews">
+						<h3 class="main__rvs-header h3">Отзывы о программе обучения</h3>
+						<div class="main__rvs-slider rvs-slider">
+							<div class="rvs-slider__inner">
+								<div class="rvs-slider__item rvs-slider-item">
+									<img class="rvs-slider-item__avatar avatar100" src="img/author-photo-01_100-100.PNG">
+									<h4 class="rvs-slider-item__header h4">Егор Карпов</h4>
+									<p class="rvs-slider-item__position p-m">Со-автор и ведущий семинара</p>
+									<p class="rvs-slider-item__review p-l">«Это лучший интенсив в своем роде. Отличные авторы, знания строго структурированы, цена очень доступная. Главное преимущество что вы не просто учитесь чему то, а реализуете все эти знания на примере конкретно вашего проекта.»</p>
+								</div>
+								<div class="rvs-slider__item rvs-slider-item">
+									<img class="rvs-slider-item__avatar avatar100" src="img/author-photo-01_100-100.PNG">
+									<h4 class="rvs-slider-item__header h4">Егор Карлов</h4>
+									<p class="rvs-slider-item__position p-m">Со-автор и ведущий семинара</p>
+									<p class="rvs-slider-item__review p-l">«Это лучший интенсив в своем роде. Отличные авторы, знания строго структурированы, цена очень доступная. Главное преимущество что вы не просто учитесь чему то, а реализуете все эти знания на примере конкретно вашего проекта.»</p>
+									<p class="rvs-slider-item__review p-l">«Это лучший интенсив в своем роде. Отличные авторы, знания строго структурированы, цена очень доступная. Главное преимущество что вы не просто учитесь чему то, а реализуете все эти знания на примере конкретно вашего проекта.»</p>
+								</div>
+								<div class="rvs-slider__item rvs-slider-item">
+									<img class="rvs-slider-item__avatar avatar100" src="img/author-photo-01_100-100.PNG">
+									<h4 class="rvs-slider-item__header h4">Егор Крапов</h4>
+									<p class="rvs-slider-item__position p-m">Со-автор и ведущий семинара</p>
+									<p class="rvs-slider-item__review p-l">«Это лучший интенсив в своем роде. Отличные авторы, знания строго структурированы, цена очень доступная. Главное преимущество что вы не просто учитесь чему то, а реализуете все эти знания на примере конкретно вашего проекта.»</p>
+								</div>
+								<div class="rvs-slider__item rvs-slider-item">
+									<img class="rvs-slider-item__avatar avatar100" src="img/author-photo-01_100-100.PNG">
+									<h4 class="rvs-slider-item__header h4">Егор Крабов</h4>
+									<p class="rvs-slider-item__position p-m">Со-автор и ведущий семинара</p>
+									<p class="rvs-slider-item__review p-l">«Это лучший интенсив в своем роде. Отличные авторы, знания строго структурированы, цена очень доступная. Главное преимущество что вы не просто учитесь чему то, а реализуете все эти знания на примере конкретно вашего проекта.»</p>
+								</div>
+								<div class="rvs-slider__item rvs-slider-item">
+									<img class="rvs-slider-item__avatar avatar100" src="img/author-photo-01_100-100.PNG">
+									<h4 class="rvs-slider-item__header h4">Егор Кранов</h4>
+									<p class="rvs-slider-item__position p-m">Со-автор и ведущий семинара</p>
+									<p class="rvs-slider-item__review p-l">«Это лучший интенсив в своем роде. Отличные авторы, знания строго структурированы, цена очень доступная. Главное преимущество что вы не просто учитесь чему то, а реализуете все эти знания на примере конкретно вашего проекта.»</p>
+								</div>
+							</div>
+							<div class="rvs-slider-navigation">
+								<div class="rvs-slider-navi-dots s-slider-navi-dots"></div>
+								<div class="rvs-slider-navi-arrows s-slider-navi-arrows"></div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="main__bg-wrapper">
+					<div class="main__inner main__inner_t">
+						<section class="main__location">
+							<div class="main__location-wrapper">
+							<h3 class="main__loc-header h3">Место и дата проведения</h3>
+							<ul class="main__loc-list">
+								<li class="main__loc-list-item">Место: г. Москва, ул. Ленина 34 к 1 Бизнес школа Синергия, 4 этаж</li>
+								<li class="main__loc-list-item">Дата: 3 ноября</li>
+								<li class="main__loc-list-item">Время: с 11:00 до 17:00</li>
+							</ul>
+							</div>
+							<a name="contactUs"></a>
+						</section>
+						<section class="main__have-questions question-card">
+							<h3 class="question-card__header h3">Остались вопросы?</h3>
+							<p class="question-card__offer p-l">Пишите, проконсультируем:</p>
+							<img class="question-card__avatar avatar100" src="img/author-photo-01_100-100.PNG">
+							<h4 class="question-card__subheader h4">Егор Карпов</h4>
+							<p class="question-card__position p-m">Со-автор и ведущий семинара</p>
+							<ul class="question-card__contacts">
+								<li class="question-card__telegram">Telegram: @EgorKarpov</li>
+								<li class="question-card__whatsapp">WhatsApp: +79153444996</li>
+								<li class="question-card__email">Почта: itb.karpov@gmail.com</li>							
+							</ul>
+						</section>
+					</div>
 				</div>
 			</main>
 
 			<footer class="footer">
 				<div class="footer-inner">
-					<div class="footer_content">
-						
+					<div class="footer__content">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#aboutWorkshop">О семинаре</a>
+							</li>
+							<li class="footer__item">
+								<a href="#workshopProgramm">Программа</a>
+							</li>
+							<li class="footer__item">
+								<a href="#workshopAuthors">Авторы</a>
+							</li>
+							<li class="footer__item">
+								<a href="#workshopReviews">Отзывы</a>
+							</li>
+						</ul>
+						<div class="footer__design-info">
+							<span class="footer__design-text">Дизайн сайта</span> &#8212; 
+							<img class="footer__design-logo" src="img/design-logo.svg">
+						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
+		<script src="js/plugins/jquery-3.5.0.min.js"></script>
+		<script src="js/plugins/slick.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
